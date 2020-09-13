@@ -13,7 +13,7 @@ module.exports = {
         extensions: ['.ts', '.tsx', '.js', '.ios.js', '.android.js'],
         alias: {
           '@contexts': './src/contexts',
-          '@pages': './src/pages',
+          '@screens': './src/screens',
           '@components': './src/components',
           '@services': './src/services',
           '@assets': './src/assets',
