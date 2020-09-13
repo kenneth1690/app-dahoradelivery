@@ -1,11 +1,38 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, SafeAreaView } from 'react-native';
 
 const App: React.FC = () => {
   return (
-    <>
-      <Text>App</Text>
-    </>
+    <SafeAreaView>
+      <Text
+        style={{
+          fontFamily: 'Nunito-Regular',
+        }}
+      >
+        App
+      </Text>
+      <Text
+        style={{
+          fontFamily: 'Nunito-SemiBold',
+        }}
+      >
+        App
+      </Text>
+      <Text
+        style={{
+          fontFamily: 'Nunito-Bold',
+        }}
+      >
+        App
+      </Text>
+      <Text
+        style={{
+          fontFamily: 'Nunito-ExtraBold',
+        }}
+      >
+        App
+      </Text>
+    </SafeAreaView>
   );
 };
 
