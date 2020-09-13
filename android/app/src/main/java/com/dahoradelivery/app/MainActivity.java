@@ -1,4 +1,4 @@
-package com.appdahoradelivery;
+package com.dahoradelivery.app;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

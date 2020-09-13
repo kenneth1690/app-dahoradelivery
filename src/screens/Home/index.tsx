@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, SafeAreaView } from 'react-native';
 
+// eslint-disable-next-line import/no-unresolved
 import * as S from './styles';
 
 const Home: React.FC = () => {
