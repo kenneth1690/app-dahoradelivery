@@ -7,8 +7,18 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "eslint ./src --fix --ext .ts,.tsx",
     "pod": "cd ios && pod install && cd .."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint --fix"
+    ]
   },
   "dependencies": {
     "babel-plugin-transform-remove-console": "^6.9.4",
@@ -38,7 +48,9 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2",
+    "husky": "^4.3.0",
     "jest": "^25.1.0",
+    "lint-staged": "^10.3.0",
     "metro-react-native-babel-preset": "^0.59.0",
     "prettier": "^2.1.1",
     "react-test-renderer": "16.13.1",
