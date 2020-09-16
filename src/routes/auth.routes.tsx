@@ -2,20 +2,20 @@ import React from 'react';
 
 import { createStackNavigator } from '@react-navigation/stack';
 
-import AuthRoutes from './auth.routes';
+import SignIn from '@screens/SignIn';
 
 const Stack = createStackNavigator();
 
-const Routes: React.FC = () => {
+const AuthRoutes: React.FC = () => {
   return (
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
       }}
     >
-      <Stack.Screen name="Auth" component={AuthRoutes} />
+      <Stack.Screen name="SigIn" component={SignIn} />
     </Stack.Navigator>
   );
 };
 
-export default Routes;
+export default AuthRoutes;
